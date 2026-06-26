@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Library Seat Finder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-book-open-reader"></i>
+
+            <div>
+
+                <h1>Smart Library Seat Finder</h1>
+
+                <p>Realtime Library Seat Monitoring System</p>
+
+            </div>
+
+        </div>
+
+        <div class="connection">
+
+            <span id="connectionDot"></span>
+
+            <span id="connectionText">Connecting...</span>
+
+        </div>
+
+    </header>
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section class="cards">
+
+        <div class="card total">
+
+            <i class="fa-solid fa-chair"></i>
+
+            <h3>Total Seats</h3>
+
+            <h1 id="totalSeats">0</h1>
+
+        </div>
+
+        <div class="card available">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>Available</h3>
+
+            <h1 id="availableSeats">0</h1>
+
+        </div>
+
+        <div class="card occupied">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Occupied</h3>
+
+            <h1 id="occupiedSeats">0</h1>
+
+        </div>
+
+        <div class="card percentage">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <h3>Occupancy</h3>
+
+            <h1 id="occupancy">0%</h1>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEATS ================= -->
+
+    <section class="seatSection">
+
+        <h2>
+
+            <i class="fa-solid fa-chair"></i>
+
+            Seat Availability
+
+        </h2>
+
+        <div class="seatGrid">
+
+            <div class="seat available" id="A1">
+
+                <h2>A1</h2>
+
+                <p id="A1status">Loading...</p>
+
+            </div>
+
+            <div class="seat available" id="A2">
+
+                <h2>A2</h2>
+
+                <p id="A2status">Loading...</p>
+
+            </div>
+
+            <div class="seat available" id="A3">
+
+                <h2>A3</h2>
+
+                <p id="A3status">Loading...</p>
+
+            </div>
+
+            <div class="seat available" id="A4">
+
+                <h2>A4</h2>
+
+                <p id="A4status">Loading...</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LIVE INFO ================= -->
+
+    <section class="liveData">
+
+        <div class="liveCard">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Last Updated</h3>
+
+            <p id="lastUpdated">--:--:--</p>
+
+        </div>
+
+        <div class="liveCard">
+
+            <i class="fa-solid fa-wifi"></i>
+
+            <h3>Firebase Status</h3>
+
+            <p id="firebaseStatus">Waiting...</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            Smart Library Seat Finder
+
+            <br>
+
+            ESP32 • Firebase • HTML • CSS • JavaScript
+
+        </p>
+
+    </footer>
+
+</div>
+
+<!-- Firebase SDK -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<!-- Firebase Configuration -->
+
+<script src="js/firebase-config.js"></script>
+
+<!-- Dashboard Logic -->
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

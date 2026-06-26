@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "author": "Abhinav",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "swA1",
+      "top": -10,
+      "left": 300,
+      "attrs": { "label": "A1" }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "swA2",
+      "top": 80,
+      "left": 300,
+      "attrs": { "label": "A2" }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "swA3",
+      "top": 167.6,
+      "left": 300.7,
+      "attrs": { "label": "A3" }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "swA4",
+      "top": 260,
+      "left": 300,
+      "attrs": { "label": "A4" }
+    }
+  ],
+  "connections": [
+    [ "esp:GND.1", "swA1:1", "black", [ "h0" ] ],
+    [ "esp:GND.1", "swA2:1", "black", [ "h0" ] ],
+    [ "esp:GND.1", "swA3:1", "black", [ "h0" ] ],
+    [ "esp:GND.1", "swA4:1", "black", [ "h0" ] ],
+    [ "swA1:2", "esp:D13", "green", [ "v0" ] ],
+    [ "swA2:2", "esp:D12", "green", [ "v0" ] ],
+    [ "swA3:2", "esp:D14", "green", [ "v0" ] ],
+    [ "swA4:2", "esp:D27", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
