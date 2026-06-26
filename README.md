@@ -200,7 +200,6 @@ SMART_LIBRARY_SEAT_FINDER/
 
 ```bash
 git clone https://github.com/abhinavb69/SMART_LIBRARY_SEAT_FINDER.git
-```
 
 ---
 
