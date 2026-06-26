@@ -199,7 +199,7 @@ SMART_LIBRARY_SEAT_FINDER/
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/abhinavb69/SMART_LIBRARY_SEAT_FINDER.git
+git clone https://github.com/abhinavb69/SMART_LIBRARY_SEAT_FINDER
 
 ---
 
