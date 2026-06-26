@@ -199,7 +199,7 @@ SMART_LIBRARY_SEAT_FINDER/
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SMART_LIBRARY_SEAT_FINDER.git
+git clone https://github.com/abhinavb69/SMART_LIBRARY_SEAT_FINDER.git
 ```
 
 ---
@@ -330,10 +330,6 @@ Contributions are welcome.
 5. Create a Pull Request.
 
 ---
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
